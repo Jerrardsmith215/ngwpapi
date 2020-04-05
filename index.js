@@ -5,7 +5,7 @@ const WPAPI = require('wpapi');
 const server = express();
 
 // server variables/middleware
-const port = process.ENV || 3000; 
+const port = process.env.PORT || 3000; 
 const parser = express.json();
 
 server.use(
